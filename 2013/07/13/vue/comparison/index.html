@@ -5,36 +5,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 6.3.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/favicon.ico" color="#222">
 
 <link rel="stylesheet" href="/css/main.css">
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-minimal.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"zsn688.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="比较运算符概述比较运算符用于比较两个值的大小，然后返回一个布尔值，表示是否满足指定的条件。 12 &gt; 1 &#x2F;&#x2F; true  上面代码比较2是否大于1，返回true。  注意，比较运算符可以比较各种类型的值，不仅仅是数值。  JavaScript 一共提供了8个比较运算符。  &gt; 大于运算符 &lt; 小于运算符 &lt;&#x3D; 小于或等于运算符 &gt;&#x3D; 大于或等于运算符 &#x3D;&#x3D; 相等运算">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计算机基础---JavaScript">
-<meta property="og:url" content="http://example.com/2013/07/13/comparison/index.html">
-<meta property="og:site_name" content="SN">
+<meta property="og:url" content="https://zsn688.github.io/2013/07/13/vue/comparison/index.html">
+<meta property="og:site_name" content="SN-Z">
 <meta property="og:description" content="比较运算符概述比较运算符用于比较两个值的大小，然后返回一个布尔值，表示是否满足指定的条件。 12 &gt; 1 &#x2F;&#x2F; true  上面代码比较2是否大于1，返回true。  注意，比较运算符可以比较各种类型的值，不仅仅是数值。  JavaScript 一共提供了8个比较运算符。  &gt; 大于运算符 &lt; 小于运算符 &lt;&#x3D; 小于或等于运算符 &gt;&#x3D; 大于或等于运算符 &#x3D;&#x3D; 相等运算">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2013-07-13T12:46:25.000Z">
-<meta property="article:modified_time" content="2022-11-24T13:42:17.623Z">
-<meta property="article:author" content="zsn">
+<meta property="article:modified_time" content="2022-11-25T08:25:03.899Z">
+<meta property="article:author" content="sn-z">
 <meta property="article:tag" content="PS3">
 <meta property="article:tag" content="Games">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2013/07/13/comparison/">
+<link rel="canonical" href="https://zsn688.github.io/2013/07/13/vue/comparison/">
 
 
 <script id="page-configurations">
@@ -47,7 +50,7 @@
   };
 </script>
 
-  <title>计算机基础---JavaScript | SN</title>
+  <title>计算机基础---JavaScript | SN-Z</title>
   
 
 
@@ -78,7 +81,7 @@
   </style>
 </noscript>
 
-</head>
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
@@ -98,7 +101,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">SN</h1>
+      <h1 class="site-title">SN-Z</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -196,16 +199,16 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2013/07/13/comparison/">
+    <link itemprop="mainEntityOfPage" href="https://zsn688.github.io/2013/07/13/vue/comparison/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="zsn">
-      <meta itemprop="description" content="今日事，今日毕">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="sn-z">
+      <meta itemprop="description" content="生活不止眼前的苟且，还有诗和远方">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SN">
+      <meta itemprop="name" content="SN-Z">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -226,7 +229,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-11-24 21:42:17" itemprop="dateModified" datetime="2022-11-24T21:42:17+08:00">2022-11-24</time>
+                <time title="修改时间：2022-11-25 16:25:03" itemprop="dateModified" datetime="2022-11-25T16:25:03+08:00">2022-11-25</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,12 +237,12 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a>
+                  <a href="/categories/computer/" itemprop="url" rel="index"><span itemprop="name">computer</span></a>
                 </span>
             </span>
 
           
-            <span id="/2013/07/13/comparison/" class="post-meta-item leancloud_visitors" data-flag-title="计算机基础---JavaScript" title="阅读次数">
+            <span id="/2013/07/13/vue/comparison/" class="post-meta-item leancloud_visitors" data-flag-title="计算机基础---JavaScript" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -254,8 +257,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2013/07/13/comparison/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2013/07/13/comparison/" itemprop="commentCount"></span>
+    <a title="valine" href="/2013/07/13/vue/comparison/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2013/07/13/vue/comparison/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -401,16 +404,33 @@
   <div id="qr" style="display: none;">
       
       <div style="display: inline-block;">
-        <img src="/images/wechatpay.png" alt="zsn 微信支付">
+        <img src="/images/wechatpay.jpg" alt="sn-z 微信支付">
         <p>微信支付</p>
       </div>
       
       <div style="display: inline-block;">
-        <img src="/images/alipay.png" alt="zsn 支付宝">
+        <img src="/images/alipay.jpg" alt="sn-z 支付宝">
         <p>支付宝</p>
       </div>
 
   </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>sn-z
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://zsn688.github.io/2013/07/13/vue/comparison/" title="计算机基础---JavaScript">https://zsn688.github.io/2013/07/13/vue/comparison/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
 </div>
 
         
@@ -429,30 +449,28 @@
             <span class="label">WeChat</span>
           </a>
         </div>
-
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="/atom.xml">
-            <span class="icon">
-              <i class="fa fa-rss"></i>
-            </span>
-
-            <span class="label">RSS</span>
-          </a>
-        </div>
     </div>
   </div>
 
 
       <footer class="post-footer">
+          
           <div class="post-tags">
-              <a href="/tags/PS3/" rel="tag"># PS3</a>
-              <a href="/tags/Games/" rel="tag"># Games</a>
+              <a href="/tags/PS3/" rel="tag"><i class="fa fa-tag"></i> PS3</a>
+              <a href="/tags/Games/" rel="tag"><i class="fa fa-tag"></i> Games</a>
           </div>
 
         
 
 
         
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2013/07/13/vue/comparison%20copy/" rel="next" title="计算机基础---JavaScript">
+      计算机基础---JavaScript <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
       </footer>
     
   </article>
@@ -511,24 +529,24 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.</span> <span class="nav-text">比较运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A6%82%E8%BF%B0"><span class="nav-number">1.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%9E%E7%9B%B8%E7%AD%89%E8%BF%90%E7%AE%97%E7%AC%A6%EF%BC%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%AF%94%E8%BE%83"><span class="nav-number">1.2.</span> <span class="nav-text">非相等运算符：字符串的比较</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%9E%E7%9B%B8%E7%AD%89%E8%BF%90%E7%AE%97%E7%AC%A6%EF%BC%9A%E9%9D%9E%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%AF%94%E8%BE%83"><span class="nav-number">1.3.</span> <span class="nav-text">非相等运算符：非字符串的比较</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%A5%E6%A0%BC%E7%9B%B8%E7%AD%89%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.4.</span> <span class="nav-text">严格相等运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%A5%E6%A0%BC%E4%B8%8D%E7%9B%B8%E7%AD%89%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.5.</span> <span class="nav-text">严格不相等运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%B8%E7%AD%89%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.6.</span> <span class="nav-text">相等运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8D%E7%9B%B8%E7%AD%89%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.7.</span> <span class="nav-text">不相等运算符</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-text">比较运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A6%82%E8%BF%B0"><span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%9E%E7%9B%B8%E7%AD%89%E8%BF%90%E7%AE%97%E7%AC%A6%EF%BC%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%AF%94%E8%BE%83"><span class="nav-text">非相等运算符：字符串的比较</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%9E%E7%9B%B8%E7%AD%89%E8%BF%90%E7%AE%97%E7%AC%A6%EF%BC%9A%E9%9D%9E%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%AF%94%E8%BE%83"><span class="nav-text">非相等运算符：非字符串的比较</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%A5%E6%A0%BC%E7%9B%B8%E7%AD%89%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-text">严格相等运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%A5%E6%A0%BC%E4%B8%8D%E7%9B%B8%E7%AD%89%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-text">严格不相等运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%B8%E7%AD%89%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-text">相等运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8D%E7%9B%B8%E7%AD%89%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-text">不相等运算符</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="zsn"
-      src="/images/avatar.gif">
-  <p class="site-author-name" itemprop="name">zsn</p>
-  <div class="site-description" itemprop="description">今日事，今日毕</div>
+    <img class="site-author-image" itemprop="image" alt="sn-z"
+      src="/images/avatar.jpeg">
+  <p class="site-author-name" itemprop="name">sn-z</p>
+  <div class="site-description" itemprop="description">生活不止眼前的苟且，还有诗和远方</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
-          <span class="site-state-item-name">日志</span>
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
@@ -555,6 +573,9 @@
       <span class="links-of-author-item">
         <a href="https://stackoverflow.com/yourname" title="StackOverflow → https:&#x2F;&#x2F;stackoverflow.com&#x2F;yourname" rel="noopener" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i>StackOverflow</a>
       </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
 
@@ -592,9 +613,9 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">zsn</span>
+  <span class="author" itemprop="copyrightHolder">sn-z</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
   <div class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-633fe4e019cee519" async="async"></script>
@@ -615,6 +636,8 @@
 
   
   <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 
@@ -623,7 +646,7 @@
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
@@ -654,13 +677,33 @@
   
 
   
+<script src="https://unpkg.com/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '660px',
+  right: '10px',
+  left: 'unset',
+  time: '0.3s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#100f2c',
+  buttonColorLight: '#fff',
+  saveInCookies: true,
+  label: '🌓',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
 
 
 <script>
 NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
   NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
     var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail,link';
+    var guest = 'nick,mail';
     guest = guest.split(',').filter(item => {
       return GUEST.includes(item);
     });
@@ -675,7 +718,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
       meta       : guest,
       pageSize   : '10' || 10,
       visitor    : true,
-      lang       : '' || 'zh-cn',
+      lang       : 'zh-cn' || 'zh-cn',
       path       : location.pathname,
       recordIP   : false,
       serverURLs : ''
